@@ -1,0 +1,279 @@
+* {
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+button {
+  border: 0;
+}
+.logo {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+}
+/* --------------------hero--------------------- */
+.container_hero {
+  height: 1020px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(0deg, #98c3e852 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+.container_hero h2 {
+  font-family: 'Galien', sans-serif;
+  letter-spacing: 0.04em;
+  font-size: 64px;
+  color: #1F3F68;
+}
+.container_hero p {
+  font-family: 'Gilroy', sans-serif;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+
+  color: #1F3F68;
+  opacity: 0.6;
+  
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.hero {
+  float: right;
+  width: calc(150px + 437 * ((100vw - 320px) / (1280 -320)));
+}
+.button {
+  width: 220px;
+  height: 56px;
+  background: #5A98D0;
+
+  box-shadow: 5px 10px 20px #356ead33;
+  border-radius: 10px;
+
+  color: white;
+  font-family: 'Gilroy';
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  transition:all .3s linear;
+}
+
+button:hover {
+  background-color: #3a6f9e;
+  color: #dbd4d4;
+}
+
+/*--------------------what_we_do---------------------*/
+.container_what_we_do {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.what_we_do {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 100px;
+
+  width: auto;
+  margin: 180px 0;
+}
+
+.what_we_do h2 {
+  margin-bottom: 158px;
+
+  font-family: 'Gilroy';
+  font-size: 36px;
+  font-weight: 600;
+  color: #316099;
+}
+.wwd_left,.wwd_right{
+  width: 50%;
+}
+/*--------------------cards---------------------*/
+.card {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+  /* calc(20px + 330 * ((100vw - 320px) /(1280 - 320))); */
+  height: auto;
+
+  background: #FFFFFF;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+
+  margin: 0 0 100px 0;
+  padding: 48px;
+}
+
+.two_card_img {
+  margin-bottom: 0;
+  align-items: center;
+  position: relative;
+  top: calc(0px - 90 * ((100vw - 320px) / (1280 -320)));
+  height: min-content;
+}
+
+.one_card_img,
+.three_card_img {
+  margin-bottom: 50px;
+}
+
+.card h3 {
+  font-family: 'Gilroy';
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+}
+
+.card p {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  opacity: 0.6;
+  margin: 16px 0;
+}
+
+.card a:hover {
+  color: #335b7e;
+}
+
+.card a {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  text-decoration: none;
+  color: #5A98D0;
+  display: flex;
+  align-items: center;
+}
+
+.card svg {
+  margin-left: 28px;
+}
+
+/*--------------------projects--------------------*/
+.container_project {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.project h2 {
+  font-family: 'Gilroy';
+  font-size: 36px;
+  font-weight: 600;
+  color: #316099;
+}
+
+.project p {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 26px;
+  width: 600px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  opacity: 0.6;
+}
+/* --------------------masks-------------------- */
+.mask_container {
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.masks {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  grid-template-rows: repeat(2, 48%);
+  justify-content: center;
+  grid-template-areas: "A A"
+    "B C";
+  grid-gap: 5%;
+}
+
+.masks img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.masks h3 {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  font-size: calc(20px + 8 * ((100vw - 320px) / (1280 -320)));
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.masks p {
+  font-family: 'Gilroy';
+  font-size: calc(10px + 6 * ((100vw -320px) / (1280 -320)));
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.masks img {
+  position: relative;
+}
+
+.one_mask {
+  position: relative;
+  grid-area: A;
+}
+
+.two_mask {
+  position: relative;
+  grid-area: B;
+}
+
+.three_mask {
+  position: relative;
+  grid-area: C;
+}
+
+.masks p,
+.masks h3 {
+  position: absolute;
+}
+
+.masks p {
+  top: 25%;
+  left: 10%;
+}
+
+.masks h3 {
+  top: 10%;
+  left: 10%;
+}
+
+.one_mask h3 {
+  top: 10%;
+  right: 5%;
+  text-align: end;
+}
+
+.one_mask p {
+  top: 25%;
+  right: 5%;
+  text-align: end;
+}
